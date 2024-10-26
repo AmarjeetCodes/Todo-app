@@ -1,0 +1,95 @@
+/* Reset and basic styling */
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+/* App container */
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+  font-size: 1.5rem; /* Slightly smaller to match mobile size */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input_holder {
+  display: flex;
+  flex-direction: column; /* Stacks inputs vertically */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%; /* Full width for all screens */
+}
+
+button {
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width button for all screens */
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* To-do item styling */
+.toDo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.toDo .icons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #333;
+}
